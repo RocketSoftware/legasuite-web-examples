@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="7.2910.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_3.xsd">
+  <properties/>
+  <controls>
+    <ajax_grid>
+      <dimensions x="10" y="10" cx="250" cy="170"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <ajax_grid_flags>
+        <ajax_auto_width/>
+        <ajax_enable_hideshow_columns/>
+        <ajax_show_lines_btw_columns/>
+        <ajax_auto_header_height/>
+        <ajax_not_keep_first_visible_row_complete/>
+      </ajax_grid_flags>
+      <ajax_opts_common>
+        <ajax_enable_control_resizing/>
+        <ajax_draggable/>
+      </ajax_opts_common>
+      <id>GRID</id>
+      <ajax_filter_field_length>100</ajax_filter_field_length>
+      <key_page_up>2</key_page_up>
+      <key_page_down>3</key_page_down>
+    </ajax_grid>
+    <ajax_button>
+      <dimensions x="322" y="68" cx="143" cy="37"/>
+      <id>BUTTON</id>
+      <title>Option Button</title>
+    </ajax_button>
+  </controls>
+</panel>

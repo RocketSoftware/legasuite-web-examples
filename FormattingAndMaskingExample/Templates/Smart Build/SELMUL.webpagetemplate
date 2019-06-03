@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <title>Container List with selection</title>
+    <id>SELMUL</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+  </properties>
+  <controls>
+    <ajax_button>
+      <dimensions x="9" y="219" cx="20" cy="27"/>
+      <general_flags_1/>
+      <general_flags_3>
+        <partial_compare/>
+        <no_focus_line/>
+      </general_flags_3>
+      <enable_check>@VDL24@</enable_check>
+      <id>SEL</id>
+      <string_send>4</string_send>
+      <list_name>(LIST)</list_name>
+      <general_flags_2>
+        <state_dependent/>
+        <visibility_not_equal_disable/>
+      </general_flags_2>
+      <send_key>1</send_key>
+      <enable_expression>4=</enable_expression>
+      <ajax_opts_common>
+        <ajax_enable_text_expression/>
+      </ajax_opts_common>
+    </ajax_button>
+    <ajax_button>
+      <title>(BUTTON2)</title>
+      <dimensions x="148" y="-1" cx="126" cy="30"/>
+      <ajax_center>1</ajax_center>
+      <general_flags_1/>
+      <general_flags_3/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <send_key>1</send_key>
+      <general_flags_2>
+        <state_dependent/>
+      </general_flags_2>
+      <list_name>(LIST)</list_name>
+      <id>(BUTTON2)</id>
+    </ajax_button>
+    <ajax_button>
+      <title>(BUTTON1)</title>
+      <dimensions x="7" y="-1" cx="126" cy="30"/>
+      <ajax_center>1</ajax_center>
+      <general_flags_1/>
+      <general_flags_3/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <send_key>1</send_key>
+      <general_flags_2>
+        <state_dependent/>
+      </general_flags_2>
+      <list_name>(LIST)</list_name>
+      <id>(BUTTON1)</id>
+    </ajax_button>
+    <ajax_container_list>
+      <dimensions x="7" y="41" cx="273" cy="186"/>
+      <ajax_container_list_column>
+        <id>CONTAINER_LIST_COLUMN</id>
+        <column_width>47</column_width>
+        <controls>
+          <ajax_check>
+            <dimensions x="14" y="8" cx="32" cy="24"/>
+            <field_flags>
+              <tab_stop/>
+            </field_flags>
+            <ajax_opacity>100</ajax_opacity>
+            <id>SELECTION</id>
+          </ajax_check>
+        </controls>
+        <ajax_layout_flex>0</ajax_layout_flex>
+      </ajax_container_list_column>
+      <ajax_container_list_column>
+        <column_width>50</column_width>
+        <controls/>
+        <ajax_layout_flex>1</ajax_layout_flex>
+        <id>CONTAINER_LIST_COLUMN2</id>
+        <title>&lt;new column&gt;</title>
+      </ajax_container_list_column>
+      <header_height>24</header_height>
+      <id>CONTAINER_LIST1</id>
+      <selection_widget_id>SELECTION</selection_widget_id>
+    </ajax_container_list>
+  </controls>
+</panel>

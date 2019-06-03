@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3763.2.35" modelVersion="1.1" ?>
+<!-- File created on 4/18/19 12:47 PM from SCR0002.screenshot -->
+<Screen
+      xmlns="http://www.seagullsoftware.com/schemas/legasuite/screen"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screen  http://www.seagullsoftware.com/schemas/legasuite/screen.xsd">
+   <ScreenName>MAINMENU</ScreenName>
+   <ScreenSize>
+      <x>0</x>
+      <y>0</y>
+      <cx>80</cx>
+      <cy>25</cy>
+   </ScreenSize>
+   <HostFieldTable>
+      <HostField>
+         <FieldId>CMD</FieldId>
+         <FieldOisObjectName/>
+         <HostFieldType>Marked</HostFieldType>
+         <OrdinalNumber>2147483647</OrdinalNumber>
+         <Flags>
+            <FieldExitRequired/>
+            <MetaAdjust/>
+         </Flags>
+         <RtlReadingOrder>FollowMeta</RtlReadingOrder>
+         <HostPosition>
+            <x>6</x>
+            <y>19</y>
+         </HostPosition>
+         <HostSize>
+            <cx>53</cx>
+            <cy>1</cy>
+         </HostSize>
+      </HostField>
+      <HostField>
+         <FieldId>FLD24002</FieldId>
+         <FieldOisObjectName/>
+         <HostFieldType>Marked</HostFieldType>
+         <OrdinalNumber>2147483647</OrdinalNumber>
+         <Flags>
+            <FieldExitRequired/>
+            <MetaAdjust/>
+         </Flags>
+         <RtlReadingOrder>FollowMeta</RtlReadingOrder>
+         <HostPosition>
+            <x>1</x>
+            <y>23</y>
+         </HostPosition>
+         <HostSize>
+            <cx>76</cx>
+            <cy>1</cy>
+         </HostSize>
+      </HostField>
+   </HostFieldTable>
+   <IdentificationTable>
+      <Identification>
+         <IdentificationType>ExactRectangleContents</IdentificationType>
+         <IdentificationSize>
+            <x>1</x>
+            <y>0</y>
+            <cx>4</cx>
+            <cy>1</cy>
+         </IdentificationSize>
+         <IdentificationDataUnicode>MAIN</IdentificationDataUnicode>
+      </Identification>
+   </IdentificationTable>
+   <Associations>
+      <SnapShots>
+         <SnapShot>Screen shots/SCR0002.screenshot</SnapShot>
+      </SnapShots>
+   </Associations>
+</Screen>

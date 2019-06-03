@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties/>
+  <controls>
+    <ajax_spinner>
+      <dimensions x="10" y="10" cx="120" cy="22"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <id>SPINNER</id>
+      <spin_max>100</spin_max>
+      <spin_step>1</spin_step>
+      <spin_page_step>10</spin_page_step>
+    </ajax_spinner>
+  </controls>
+</panel>

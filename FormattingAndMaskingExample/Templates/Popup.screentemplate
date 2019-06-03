@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0" modelVersion="1.0" ?>
+<ScreenTemplate>
+   <ScreenTemplateComment>Basic screen template for popups</ScreenTemplateComment>
+   <HostFieldTable>
+      <HostField>
+         <FieldId>(TITLE)</FieldId>
+         <HostPosition>
+            <x>1</x>
+            <y>1</y>
+         </HostPosition>
+         <HostSize>
+            <cx>77</cx>
+            <cy>1</cy>
+         </HostSize>
+         <HostFieldType>Text</HostFieldType>
+         <Flags>
+            <StripBegin/>
+            <LeftAdjust/>
+         </Flags>
+         <FillerCharacter>32</FillerCharacter>
+      </HostField>
+      <HostField>
+         <FieldId>FKEYS</FieldId>
+         <FieldOisObjectName/>
+         <HostFieldType>Marked</HostFieldType>
+         <OrdinalNumber>2147483647</OrdinalNumber>
+         <Flags>
+            <FieldExitRequired/>
+            <MetaAdjust/>
+         </Flags>
+         <RtlReadingOrder>FollowMeta</RtlReadingOrder>
+         <HostPosition>
+            <x>2</x>
+            <y>21</y>
+         </HostPosition>
+         <HostSize>
+            <cx>58</cx>
+            <cy>1</cy>
+         </HostSize>
+      </HostField>
+   </HostFieldTable>
+</ScreenTemplate>

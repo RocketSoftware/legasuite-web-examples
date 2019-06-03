@@ -1,0 +1,16 @@
+﻿'/******************************************************************************/
+'/*  Rocket Software makes no warranty, express or implied, with regard to     */
+'/*  this material, including fitness for use. Additionally, Rocket is not     */
+'/*  responsible for maintaining compatibility of this information with future */
+'/*  releases.  Rocket provides this as an example only.                       */
+'/*  Customers using this information do so at their own risk.                 */
+'/*  The items provided to you are identified as Type II material              */
+'/*  as per the Professional Services Agreement. For the                       */
+'/*  avoidance of doubt, this means that Rocket owns the IP in                 */
+'/*  any such deliverables.                                                    */
+'/******************************************************************************/
+
+Option Explicit
+
+hostFieldPutData("CMD", 0, "1234567784321876")
+panelUpdateEnable(5)

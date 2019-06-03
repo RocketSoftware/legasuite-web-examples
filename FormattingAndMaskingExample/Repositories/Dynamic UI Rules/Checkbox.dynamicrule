@@ -1,0 +1,22 @@
+<rule>
+  <matches>
+  	<match>
+      <container id="checkbox" template="Check box">
+      	<field id="input" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>true</editable>
+            <width>1</width>
+          </attributes>
+        </field>
+        <field id="title" min_occurrence="1" max_occurrence="1" skip_empty="true">
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>
+            <regexp pattern="(?&lt;check&gt;\D)/(?&lt;uncheck&gt;\D)"/>
+          </content>
+        </field>
+      </container>
+    </match>
+  </matches>
+</rule>

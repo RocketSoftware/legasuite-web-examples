@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3763.2.35" modelVersion="1.1" ?>
+<!-- File created on 5/17/19 11:24 AM from ALLOTHERS.screenshot -->
+<Screen
+      xmlns="http://www.seagullsoftware.com/schemas/legasuite/screen"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screen  http://www.seagullsoftware.com/schemas/legasuite/screen.xsd">
+   <ScreenName>ALLOTHERS</ScreenName>
+   <ScreenSize>
+      <x>0</x>
+      <y>0</y>
+      <cx>80</cx>
+      <cy>25</cy>
+   </ScreenSize>
+   <HostFieldTable>
+      <HostField>
+         <FieldId>ALLOTHERS</FieldId>
+         <FieldOisObjectName/>
+         <HostFieldType>Marked</HostFieldType>
+         <OrdinalNumber>2147483647</OrdinalNumber>
+         <Flags>
+            <FieldExitRequired/>
+            <MetaAdjust/>
+         </Flags>
+         <RtlReadingOrder>FollowMeta</RtlReadingOrder>
+         <HostPosition>
+            <x>0</x>
+            <y>0</y>
+         </HostPosition>
+         <HostSize>
+            <cx>80</cx>
+            <cy>24</cy>
+         </HostSize>
+      </HostField>
+   </HostFieldTable>
+   <IdentificationTable>
+      <Identification>
+         <IdentificationType>Dynamic</IdentificationType>
+      </Identification>
+   </IdentificationTable>
+   <Associations>
+      <SnapShots>
+         <SnapShot>Screen shots/ALLOTHERS.screenshot</SnapShot>
+      </SnapShots>
+   </Associations>
+</Screen>

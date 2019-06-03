@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2278.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties/>
+  <controls>
+    <ajax_date>
+      <dimensions x="10" y="10" cx="90" cy="24"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <ajax_opacity>100</ajax_opacity>
+      <id>DATE</id>
+    </ajax_date>
+  </controls>
+</panel>

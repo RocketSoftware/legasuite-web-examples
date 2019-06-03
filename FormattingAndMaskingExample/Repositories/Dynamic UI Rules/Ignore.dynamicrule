@@ -1,0 +1,19 @@
+<rule>
+  <matches>
+    <match>
+      <container id="ignore">
+        <field>
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>	
+          	<any>
+          		<regexp pattern="\S+"/>
+          		<regexp pattern="--+"/>
+          	</any>
+          </content>
+        </field>
+      </container>
+    </match>
+  </matches>
+</rule>

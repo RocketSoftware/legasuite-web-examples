@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3763.2.35" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <id>ALLOTHERS</id>
+    <title>&lt;Place your title here&gt;</title>
+    <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="1010" cy="720"/>
+    <screen_name>ALLOTHERS</screen_name>
+  </properties>
+  <controls>
+    <ajax_emulator>
+      <dimensions x="10" y="89" cx="770" cy="555"/>
+      <id>EMULATOR1</id>
+    </ajax_emulator>
+    <ajax_label>
+      <dimensions x="10" y="10" cx="770" cy="75"/>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL1</id>
+      <title>This is a project providing an example of field formatting and masking using JavaScript in LegaSuite Web. Navigate to the IBM i Main menu (screen/webpage MAINMENU) to use this example on the command field in the main menu.</title>
+      <general_flags_1>
+        <word_wrap/>
+      </general_flags_1>
+    </ajax_label>
+  </controls>
+</panel>

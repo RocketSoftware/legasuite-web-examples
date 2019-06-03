@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <!--<meta name="servleturl" content="http://localhost:8080/webclient/" />-->
+    <!--<base href="http://localhost:8080/webclient/" />--> <!-- When using this make sure to enable CORS support in your web application server -->
+    <title>LegaSuite Web Client</title>
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            background: url(resource/ajaxclient/icons/loader.gif) no-repeat center center;
+        }
+    </style>
+    
+    <script type="text/javascript" src="/webclient/formattingMaskingScript.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        /*
+         * Add HTML client parameters here ...
+         */
+        function ls_init() {
+            var params = ajaxclient.Parameters.getInstance();
+
+            //params.addParameter('AutoLogonMenu', '');
+            //params.addParameter('AutoLogonLibrary', '');
+            //params.addParameter('AutoLogonPassword', '');
+            //params.addParameter('AutoLogonProgram', '');
+            //params.addParameter('AutoLogonUsername', '');
+            params.addParameter('BrowserEmbedded', 'yes');
+            //params.addParameter('wsport', '9080');
+            //params.addParameter('ws_path', '/webclient_ws');
+            //params.addParameter('ws_url', 'ws://localhost:9081/webclient_ws');
+            //params.addParameter('ConnectedText', '');
+            //params.addParameter('ConnectingText', '');
+            //params.addParameter('CouldNotConnectText', '');
+            //params.addParameter('DeviceName', '');
+            //params.addParameter('EmulatorKeysClient', 'NumPlusAsFieldPlus,NumMinAsFieldMin,ControlAsExit,ControlAsEnter,NumEnterAsExit');
+            params.addParameter('FontUsage', '0');
+            //params.addParameter('HideServerInfo', 'yes');
+            //params.addParameter('ImageScalingEnabled', 'yes');
+            //params.addParameter('IncorrectProtocolText', '');
+            //params.addParameter('ModifySpoolfileBottomMargin', '');
+            //params.addParameter('ModifySpoolfileFontsize', '');
+            //params.addParameter('ModifySpoolfileLeftMargin', '');
+            //params.addParameter('ModifySpoolfileLinesperpage', '0');
+            //params.addParameter('ModifySpoolfileRightMargin', '');
+            //params.addParameter('ModifySpoolfileTopMargin', '');
+            //params.addParameter('ModifySpoolfileWordWrap', 'yes');
+            //params.addParameter('NegotiationInterruptedText', '');
+
+            //params.addParameter("ConnectionLostTitleText", "Connection is lost");
+            //params.addParameter("ConnectionLostText", "The page will be reloaded to try to establish a new connection");
+            //params.addParameter("ConnectionLostButtonOkText", "Ok");
+            //params.addParameter('NoBorder', 'no');
+            params.addParameter('NoSplash', 'yes');
+            //params.addParameter('OutdatedServerText', '');
+            //params.addParameter('PanelResizing', '1');
+            //params.addParameter('PrintPanelOption', 'BOTH');
+            //params.addParameter('PrintPanelScaleToFit', 'yes');
+            //params.addParameter('PrintPanelTitle', '');
+            //params.addParameter('SessionId', '');
+            //params.addParameter('ShowMnemonics', 'yes');
+            //params.addParameter('SpoolfilePrintTitle', 'yes');
+            params.addParameter('TitleBar', 'no');
+            //params.addParameter('UseServerDateTimeFormat', 'no');
+            //params.addParameter('WrongAlgorithmText', '');
+            //params.addParameter('RestoreCaretOnWindowFocus', 'no');
+            //params.addParameter('SetFocusOniOS', 'no');
+            //params.addParameter('UseNativeScrollBarsOnMainPage', 'no');
+            //params.addParameter('UseNativeScrollBarsOnPopupPages', 'no');
+            //params.addParameter('UseNativeScrollBarsOnMovablePanes', 'no');
+            //params.addParameter('UseNativeScrollBarsOnContainers', 'no');
+            //params.addParameter('EnableLassoCopying', 'yes');
+            //params.addParameter('LassoCopyMaxLineVariation', 5);
+            //params.addParameter('LassoCopyFieldSeparators', 'Tab,Linebreak,Space,Semicolon,Colon,Comma,Dot,@,#,$');
+            //params.addParameter('LassoCopyIncludeDisabledWidgets', 'yes');
+            //params.addParameter('LassoCopyMinimumDragDistance', '5');
+            //params.addParameter('PasteFieldSeparators', 'Tab,;');
+            //params.addParameter('ClipboardCopyFlipTrailingMinus', 'yes');
+            //params.addParameter('ScriptPlayerSyncDelay', 0);
+            //params.addParameter('ScriptPlayerActionDelay', 0);
+            //params.addParameter('ScriptPlayerActionTimeout', 10000);
+            //params.addParameter('InputRejectedSound', 'yes');
+            //params.addParameter('ClientLocking', 'none'); //'none', 'always', 'always_except_when_send_all_keys_enabled'
+            //params.addParameter('KeyboardBufferEnabled', 'no'); //setting this to 'yes' will enable client locking
+            //setting this to "" will prevent client from displaying warning on page leave
+            //params.addParameter('LeavingPageMessage', 'You are about to leave the page, your current session will be closed');
+        }
+
+        function startClient() {
+            if (/MSIE ([^;]+)/.test(navigator.userAgent)){
+                var ver = parseFloat(RegExp["$1"]);
+                if (ver < 10 || document.documentMode && document.documentMode < 10)
+                    window.alert("Version of browser is older than 10. Please update it or switch off compatibility mode.");
+            }
+
+            var req = new XMLHttpRequest();
+            req.withCredentials = true;
+            req.onload = function() {
+                var head = document.getElementsByTagName("head")[0];
+                var ajaxJS = document.createElement("script");
+                ajaxJS.setAttribute("type", "text/javascript");
+                var cacheId = "";
+                if(this.status === 200) {
+                    cacheId += "?v=" + this.responseText;
+                }
+                ajaxJS.setAttribute("src", "script/ajaxclient.js" + cacheId);
+                head.appendChild(ajaxJS);
+            };
+            req.open("get", "version", true);
+            req.send();
+        }
+
+        //Uncomment this function to execute after client started
+//        function onClientStart() {
+//            //to access Host API uncomment the following line
+//            //var hostApi = ajaxclient.HostFieldApi.getInstance();
+//        }
+
+        //Uncomment this function to customize calculation of widget sizes for Dynamic UI
+//        function adjustWidgetSizeCalcText(colSpan) {
+//            return new Array(colSpan).join(colSpan < 4 ? 'W' : 'A');
+//        }
+//
+//        function adjustWidgetSize(widget) {
+//            if (qx.Class.hasMixin(qx.Class.getByName(widget.classname), ajaxclient.webui.MAjaxTextInputUpdater)) {
+//                var insets = widget.getInsets(),
+//                    colSpan = widget.getLayoutProperties().colSpan,
+//                    text = adjustWidgetSizeCalcText(colSpan),
+//                    textWidth,
+//                    widgetWidth,
+//                    i;
+//
+//                widget.setAllowGrowX(true);
+//                textWidth = qx.bom.Label.getTextSize(text, widget.getContentElement().getAllStyles()).width;
+//                if ((widget instanceof ajaxclient.webui.AjaxComboBox) ||
+//                        (widget instanceof ajaxclient.webui.AjaxDatePicker) ||
+//                        (widget instanceof ajaxclient.webui.AjaxSpinner)) {
+//                    // add width for combobox/datepicker/spinner button
+//                    textWidth += 16;
+//                }
+//                widgetWidth = Math.ceil(textWidth + insets.left + insets.right);
+//                widget.setMinWidth(widgetWidth);
+//                widget.setWidth(widgetWidth);
+//            }
+//        }
+//
+
+        // Uncomment this function to customize the layout manager used in dynamic UI
+//		function adjustDynamicUILayout(widget) {
+//            var layoutManager = widget.getLayoutManager(),
+//            i;
+//	        if(layoutManager !== null && layoutManager.setColumnMinWidth) {
+//            	var font = qx.theme.manager.Font.getInstance().resolve(widget.getFont());
+//            	var size = qx.bom.Label.getTextSize("A", font.getStyles());
+//                for(i = 0; i < layoutManager.getColumnCount(); i += 1) {
+//                    layoutManager.setColumnMinWidth(i, null);
+//                    layoutManager.setColumnWidth(i, size.width-1);
+//                }
+//        	}
+//		}
+
+        //]]>
+    </script>
+</head>
+<body onload="startClient()"></body>
+</html>

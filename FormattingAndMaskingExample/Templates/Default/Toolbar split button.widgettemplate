@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2278.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties/>
+  <controls>
+    <ajax_tool_bar>
+      <dimensions x="10" y="10" cx="250" cy="30"/>
+      <id>TOOLBAR</id>
+      <ajax_tool_bar_splitbutton>
+        <dimensions cx="20"/>
+        <id>TOOLBAR_SPLITBUTTON1</id>
+        <field_flags>
+          <tab_stop/>
+        </field_flags>
+      </ajax_tool_bar_splitbutton>
+    </ajax_tool_bar>
+  </controls>
+</panel>

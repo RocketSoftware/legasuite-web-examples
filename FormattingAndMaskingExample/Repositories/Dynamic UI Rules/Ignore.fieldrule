@@ -1,0 +1,15 @@
+<rule>
+  <ignore>
+    <field>
+      <attributes>
+        <editable>false</editable>
+      </attributes>
+      <content>	
+        <any>
+          <regexp pattern="A\d+"/>
+          <regexp pattern="--+"/>
+        </any>
+      </content>
+    </field>
+  </ignore>
+</rule>

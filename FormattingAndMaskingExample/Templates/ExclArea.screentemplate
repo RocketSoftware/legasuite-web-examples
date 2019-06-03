@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="6.1859.1.10" modelVersion="1.0" ?>
+<ScreenTemplate>
+   <ScreenTemplateComment>Exclude fields by area</ScreenTemplateComment>
+   <HostFieldTable>
+      <HostField>
+         <FieldId>SCREENNAME</FieldId>
+         <HostSize>
+            <cx>10</cx>
+            <cy>1</cy>
+         </HostSize>
+         <HostFieldType>Text</HostFieldType>
+         <Flags>
+            <StripBegin/>
+            <StripEnd/>
+            <StripPunctuation/>
+            <LeftAdjust/>
+         </Flags>
+         <FillerCharacter>32</FillerCharacter>
+      </HostField>
+      <HostField>
+         <FieldId>SYSTEM</FieldId>
+         <FieldOisObjectName/>
+         <HostFieldType>Marked</HostFieldType>
+         <OrdinalNumber>2147483647</OrdinalNumber>
+         <Flags>
+            <FieldExitRequired/>
+            <MetaAdjust/>
+         </Flags>
+         <RtlReadingOrder>FollowMeta</RtlReadingOrder>
+         <HostPosition>
+            <x>58</x>
+            <y>0</y>
+         </HostPosition>
+         <HostSize>
+            <cx>20</cx>
+            <cy>2</cy>
+         </HostSize>
+      </HostField>
+   </HostFieldTable>
+</ScreenTemplate>

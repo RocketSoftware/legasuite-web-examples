@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="6.1859.1.29" modelVersion="1.0" ?>
+<ScreenTemplate>
+   <ScreenTemplateComment>Basic screen template</ScreenTemplateComment>
+   <HostFieldTable>
+      <HostField>
+         <FieldId>SYSNAME</FieldId>
+         <HostPosition>
+            <x>69</x>
+         </HostPosition>
+         <HostSize>
+            <cx>8</cx>
+            <cy>1</cy>
+         </HostSize>
+         <HostFieldType>Text</HostFieldType>
+         <Flags>
+            <LeftAdjust/>
+         </Flags>
+         <FillerCharacter>32</FillerCharacter>
+      </HostField>
+      <HostField>
+         <FieldId>FKEYS</FieldId>
+         <OrdinalNumber>1</OrdinalNumber>
+         <HostPosition>
+            <x>1</x>
+            <y>21</y>
+         </HostPosition>
+         <HostSize>
+            <cx>75</cx>
+            <cy>2</cy>
+         </HostSize>
+         <HostFieldType>Text</HostFieldType>
+         <Flags>
+            <StripBegin/>
+            <StripEnd/>
+            <StripPunctuation/>
+            <LeftAdjust/>
+         </Flags>
+         <FillerCharacter>32</FillerCharacter>
+      </HostField>
+      <HostField>
+         <FieldId>SCREENNAME</FieldId>
+         <OrdinalNumber>2</OrdinalNumber>
+         <HostSize>
+            <cx>15</cx>
+            <cy>1</cy>
+         </HostSize>
+         <HostFieldType>Text</HostFieldType>
+         <Flags>
+            <StripBegin/>
+            <StripEnd/>
+            <StripPunctuation/>
+            <LeftAdjust/>
+         </Flags>
+         <FillerCharacter>32</FillerCharacter>
+      </HostField>
+   </HostFieldTable>
+</ScreenTemplate>

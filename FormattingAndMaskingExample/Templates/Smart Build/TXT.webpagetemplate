@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <title>Text layouts</title>
+    <id>TXT</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <screen_name>TXT</screen_name>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <codepage>1252</codepage>
+  </properties>
+  <controls>
+    <ajax_label>
+      <dimensions x="16" y="16" cx="54" cy="16"/>
+      <title>(ANY)</title>
+      <general_flags_1/>
+      <general_flags_3/>
+    </ajax_label>
+    <ajax_label>
+      <general_flags_2/>
+      <title>(SAME)</title>
+      <dimensions x="73" y="16" cx="66" cy="16"/>
+      <general_flags_1/>
+      <general_flags_3/>
+    </ajax_label>
+  </controls>
+</panel>

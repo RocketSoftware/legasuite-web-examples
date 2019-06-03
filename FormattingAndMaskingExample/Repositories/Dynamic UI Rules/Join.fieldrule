@@ -1,0 +1,29 @@
+<rule>
+  <!--  example to join function key as button -->
+  <join>
+  	<field min_occurrence="1" max_occurrence="1">
+		<attributes>
+			<editable>false</editable>
+		</attributes>
+		<content>
+			<regexp pattern="F\d+"/>
+		</content>
+    </field>
+    <field min_occurrence="1" max_occurrence="1">
+		<attributes>
+			<editable>false</editable>
+		</attributes>
+		<content>
+			<regexp pattern="="/>
+		</content>
+    </field>
+    <field min_occurrence="1" search_direction="horizontal">
+		<attributes>
+			<editable>false</editable>
+		</attributes>
+		<content>
+			<regexp pattern="^.[^0-9]+?.+"/>
+		</content>
+    </field>
+  </join>
+</rule>

@@ -1,0 +1,45 @@
+<rule>
+	<matches>
+		<match>
+			<container id="grid" template="Grid" type="Table" hide_input_column_if_option_button_present="true"
+															  can_have_redundant_fields_between="option-header"
+                                                              strict_header_generation="true">
+				<field id="option_button" min_occurrence="0" skip_empty="true">
+					<attributes>
+						<editable>false</editable>
+          			</attributes>
+          			<content>
+            			<regexp pattern="(?&lt;send_string&gt;\d+)=(?&lt;label&gt;\D+)"/>
+          			</content>
+        		</field>
+				<field id="column_header" min_occurrence="2" skip_empty="true">
+					<attributes>
+						<editable>false</editable>
+						<intensified>true</intensified>
+					</attributes>
+					<content>
+                    	<regexp pattern="^[^\.]+\.?$"/>
+                    </content>
+				</field>     
+				<container id="row" min_occurrence="1" search_direction="vertical">
+					<field id="column_cell" min_occurrence="0" search_direction="horizontal" skip_empty="true">
+						<!-- Restriction is removed to allow editable cells in any place
+						<attributes>
+							<editable>false</editable>
+						</attributes>
+						-->
+					</field>
+				</container>
+				<field id="table_bottom" min_occurrence="0" max_occurrence="1" skip_empty="true">
+					<attributes>
+						<editable>false</editable>
+					</attributes>
+					<content>
+						<regexp pattern="[MB]o[rt][et][.o][.m]\.*"/>
+					</content>
+				</field>
+			</container>
+		</match>
+	</matches>
+</rule>
+

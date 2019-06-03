@@ -1,0 +1,48 @@
+<rule>
+  <matches>
+  	<match>
+      <container id="button" template="Button">
+        <field id="title" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>
+            <any>
+              <!--  pattern is F1=HELP -->
+              <regexp pattern="(?&lt;key&gt;F\d+)=(?&lt;label&gt;([^ ]+( [^F ]+)*)+)"/>
+              <regexp pattern="Press +(?&lt;key&gt;\w+)( +to +(?&lt;label&gt;\w+))?"/>
+            </any>
+          </content>
+        </field>
+      </container>
+    </match>
+    <match>
+      <container id="button" template="Button">
+        <field id="key" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>
+            <regexp pattern="F\d+"/>
+          </content>
+        </field>
+        <field id="equal" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>
+            <regexp pattern="="/>
+          </content>
+        </field>
+        <field id="label" min_occurrence="1" search_direction="horizontal">
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>
+            <regexp pattern="^.[^0-9]+?.+"/>
+          </content>
+        </field>
+      </container>
+    </match>
+  </matches>
+</rule>

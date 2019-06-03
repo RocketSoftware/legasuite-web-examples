@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <title>Push button layouts</title>
+    <id>PSH</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <codepage>1252</codepage>
+  </properties>
+  <controls>
+    <ajax_button>
+      <dimensions x="16" y="20" cx="54" cy="24"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_2>
+        <state_dependent/>
+      </general_flags_2>
+      <title>(ANY)</title>
+      <general_flags_1/>
+    </ajax_button>
+    <ajax_button>
+      <title>(SAME)</title>
+      <dimensions x="74" y="20" cx="126" cy="30"/>
+      <ajax_center>1</ajax_center>
+      <general_flags_1/>
+      <general_flags_3/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <send_key>0</send_key>
+      <general_flags_2>
+        <state_dependent/>
+      </general_flags_2>
+      <string_send>(SAME)</string_send>
+      <id>(SAME)</id>
+      <host_field>(SAME)</host_field>
+      <panel_next>(SAME)</panel_next>
+      <list_name>(SAME)</list_name>
+    </ajax_button>
+  </controls>
+</panel>

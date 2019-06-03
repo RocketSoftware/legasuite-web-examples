@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="1.0.0.qualifier" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_4.xsd">
+  <properties>
+    <title>Smart Build Settings</title>
+    <id>SETTINGS</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <codepage>1252</codepage>
+  </properties>
+  <controls>
+    <ajax_group_box>
+      <dimensions x="12" y="6" cx="432" cy="469"/>
+      <title>General</title>
+      <controls>
+        <ajax_label>
+          <dimensions x="-3" y="-6" cx="280" cy="16"/>
+          <title>AlbumTextsAsMessages=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="14" cx="280" cy="16"/>
+          <title>MenuItemSpaceRequired=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="34" cx="280" cy="16"/>
+          <title>MenuItemHostFieldBreakdown=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="54" cx="280" cy="16"/>
+          <title>MaxListBoxHeaderLines=2</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="74" cx="280" cy="16"/>
+          <title>MaxSelectionColumnWidth=2</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="94" cx="280" cy="16"/>
+          <title>NoiseChars=.: ?|</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="114" cx="280" cy="16"/>
+          <title>OptionSeparatorChars==</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="134" cx="280" cy="16"/>
+          <title>OptionListSeparatorChars=,/</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="154" cx="280" cy="16"/>
+          <title>AverageCharWidthLength=10</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="174" cx="280" cy="16"/>
+          <title>AssignFieldIds=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="194" cx="280" cy="16"/>
+          <title>PromptInListBoxHeader=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="214" cx="280" cy="16"/>
+          <title>TextCaseConversion=0</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="234" cx="280" cy="16"/>
+          <title>TemplateFieldMapper=</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="254" cx="280" cy="16"/>
+          <title>TreatAsChars=()</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="274" cx="280" cy="16"/>
+          <title>FieldChecksAsHost=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="294" cx="280" cy="16"/>
+          <title>SingleRecordListbox=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="314" cx="280" cy="16"/>
+          <title>TemplateFieldAlignment=0</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="334" cx="280" cy="16"/>
+          <title>MaxMenuEntryFieldLength=0</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="354" cx="280" cy="16"/>
+          <title>StripLeadingSpacesFromText=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="374" cx="280" cy="16"/>
+          <title>HandleWebContainerWidgetTemplatesSeparately=1</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-2" y="396" cx="280" cy="16"/>
+          <title>SelTemplateRequiresInputSelectionColumn=1</title>
+          <id>LABEL1</id>
+        </ajax_label>
+      </controls>
+    </ajax_group_box>
+    <ajax_group_box>
+      <dimensions x="12" y="482" cx="432" cy="101"/>
+      <title>Live</title>
+      <controls>
+        <ajax_label>
+          <dimensions x="-3" y="-7" cx="280" cy="16"/>
+          <title>HostEndOnLineWidth=0</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="13" cx="280" cy="16"/>
+          <title>EmulatorSpaceField=0</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="-3" y="33" cx="280" cy="16"/>
+          <title>LiveTextsAsMessages=0</title>
+        </ajax_label>
+      </controls>
+    </ajax_group_box>
+  </controls>
+</panel>

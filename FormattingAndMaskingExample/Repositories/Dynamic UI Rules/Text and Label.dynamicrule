@@ -1,0 +1,26 @@
+<rule>
+  <matches>
+    <match>
+      <container id="label" template="Label">
+        <field id="title" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>
+            <!-- strip spaces -->
+            <regexp pattern="\S+"/>
+          </content>
+        </field>
+      </container>
+    </match>
+    <match>
+      <container id="text" template="Text">
+        <field id="input" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>true</editable>
+          </attributes>
+        </field>
+      </container>
+    </match>
+  </matches>
+</rule>

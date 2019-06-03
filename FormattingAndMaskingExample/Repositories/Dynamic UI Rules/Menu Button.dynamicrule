@@ -1,0 +1,38 @@
+<rule>
+  <matches>
+    <match>
+      <container id="menu_button" template="Menu Button">
+        <field id="row" min_occurrence="2" search_direction="vertical" skip_empty="true">
+          <attributes>
+            <editable>false</editable>
+          </attributes>
+          <content>
+            <regexp pattern="^(?&lt;send_string&gt;\d+)\. *(?&lt;label&gt;.+)"/>
+          </content>
+        </field>
+      </container>
+    </match>
+    <match>
+      <container id="menu_button" template="Menu Button">
+        <container id="row" min_occurrence="2" search_direction="vertical" skip_empty="true">
+            <field id="value" min_occurrence="1" max_occurrence="1" next_field_direction="horizontal">
+                <attributes>
+                    <editable>false</editable>
+                </attributes>
+                <content>
+                    <regexp pattern="^\s*(?&lt;send_string&gt;[\*0-9]+)\."/>
+                </content>
+            </field>
+            <field id="label" min_occurrence="1" max_occurrence="1">
+                <attributes>
+                    <editable>false</editable>
+                </attributes>
+                <content>
+                    <regexp pattern="\S+"/>
+                </content>
+            </field>
+        </container>
+      </container>
+    </match>
+  </matches>
+</rule>

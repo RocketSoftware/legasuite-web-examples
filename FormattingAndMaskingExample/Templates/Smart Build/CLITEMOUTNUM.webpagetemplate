@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <title>Container List column numeric output fields</title>
+    <id>CLITEMOUTNUM</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <screen_name>OUT</screen_name>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+  </properties>
+  <controls>
+    <ajax_label>
+      <dimensions x="15" y="26" cx="54" cy="16"/>
+      <title>@(ANY)@</title>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <general_flags_1/>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="71" y="26" cx="58" cy="16"/>
+      <title>@(SAME)@</title>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <general_flags_1>
+        <right_aligned/>
+      </general_flags_1>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_label>
+  </controls>
+</panel>

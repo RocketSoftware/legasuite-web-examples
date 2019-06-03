@@ -1,0 +1,25 @@
+<rule>
+  <matches>
+    <match>
+   	  <container>
+        <container id="label" template="Label" min_occurrence="1" search_direction="horizontal">
+          <field id="title" min_occurrence="1" max_occurrence="1">
+            <attributes>
+              <editable>false</editable>
+            </attributes>
+            <content>
+              <regexp pattern=".*Date.*"/>
+            </content>
+          </field>
+        </container>
+        <container id="date_picker" template="Date picker" min_occurrence="1" search_direction="horizontal">
+          <field id="input" min_occurrence="1" max_occurrence="1">
+            <attributes>
+              <editable>true</editable>
+            </attributes>
+          </field>
+        </container>
+      </container>
+    </match>
+  </matches>
+</rule>

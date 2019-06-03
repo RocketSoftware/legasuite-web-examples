@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3763.2.35" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <id>MAINMENU</id>
+    <title>&lt;Place your title here&gt;</title>
+    <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="1010" cy="720"/>
+    <screen_name>MAINMENU</screen_name>
+    <Events>
+      <Event>
+        <Type>OnLoad</Type>
+        <ScriptCall>onPageLoad</ScriptCall>
+      </Event>
+    </Events>
+  </properties>
+  <controls>
+    <ajax_label>
+      <dimensions x="10" y="10" cx="770" cy="74"/>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL8</id>
+      <title>This page contains a field where formatting capabilities are displayed. A Creditcard number of 16 numerical digits on the host will be shown as four groupd of four digits separated by spaces on the webpage.</title>
+      <general_flags_1>
+        <word_wrap/>
+      </general_flags_1>
+    </ajax_label>
+    <ajax_group_box>
+      <dimensions x="10" y="88" cx="770" cy="74"/>
+      <id>GROUP1</id>
+      <title>User representation on web page</title>
+      <controls>
+        <ajax_label>
+          <dimensions x="0" y="5" cx="150" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL6</id>
+          <title>Formatted field</title>
+        </ajax_label>
+        <ajax_text>
+          <dimensions x="159" y="5" cx="474" cy="22"/>
+          <field_flags>
+            <tab_stop/>
+          </field_flags>
+          <field_length length="19" field_type="0" check_direct="0"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>FORMATTED_INPUT</id>
+          <host_field>CMD</host_field>
+        </ajax_text>
+      </controls>
+    </ajax_group_box>
+    <ajax_group_box>
+      <dimensions x="10" y="166" cx="770" cy="107"/>
+      <id>GROUP2</id>
+      <controls>
+        <ajax_label>
+          <dimensions x="5" y="0" cx="150" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL4</id>
+          <title>Value on the host:</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="5" y="26" cx="150" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL5</id>
+          <title>Edit field host data</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="164" y="0" cx="474" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL2</id>
+          <title>@CMD@</title>
+        </ajax_label>
+        <ajax_text>
+          <dimensions x="164" y="26" cx="474" cy="22"/>
+          <field_flags>
+            <tab_stop/>
+          </field_flags>
+          <field_length length="53" field_type="0" check_direct="0"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>TEXT1</id>
+          <host_field>CMD</host_field>
+        </ajax_text>
+      </controls>
+      <title>Host value representation</title>
+    </ajax_group_box>
+    <ajax_group_box>
+      <dimensions x="10" y="277" cx="770" cy="117"/>
+      <id>GROUP3</id>
+      <controls>
+        <ajax_script_window>
+          <dimensions x="663" y="0" cx="94" cy="26"/>
+          <script>//*******************************************************************************/
+//*  Rocket Software makes no warranty, express or implied, with regard to      */
+//*  this material, including fitness for use. Additionally, Rocket is not      */
+//*  responsible for maintaining compatibility of this information with future  */
+//*  releases.  Rocket provides this as an example only.                        */
+//*  Customers using this information do so at their own risk.                  */
+//*  The items provided to you are identified as Type II material               */
+//*  as per the Professional Services Agreement. For the                        */
+//*  avoidance of doubt, this means that Rocket owns the IP in                  */
+//*  any such deliverables.                                                     */
+//*******************************************************************************/
+
+// Function attachFormattingAndMaskingCode() is defined in a js file in the
+// WebClient folder. We pass it the Woidget ID there the masking should be applied
+// and the object of this script window.
+attachFormattingAndMaskingCode(&quot;FORMATTED_INPUT&quot;, this);
+</script>
+          <id>SCRIPTWINDOW1</id>
+        </ajax_script_window>
+        <ajax_label>
+          <dimensions x="0" y="5" cx="150" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL9</id>
+          <title>Script window</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="0" y="31" cx="150" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL7</id>
+          <title>Host message:</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="159" y="31" cx="474" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL3</id>
+          <title>@FLD24002@</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="159" y="57" cx="474" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL1</id>
+          <title>type 90 to sign off</title>
+        </ajax_label>
+        <ajax_label>
+          <dimensions x="159" y="5" cx="507" cy="22"/>
+          <ajax_opacity>100</ajax_opacity>
+          <id>LABEL10</id>
+          <title>The scriptwindow on the right links the script to the formatted field</title>
+        </ajax_label>
+      </controls>
+      <title>Additional info on page</title>
+    </ajax_group_box>
+  </controls>
+</panel>

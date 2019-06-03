@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <title>Container List column numeric input fields</title>
+    <id>CLITEMINPNUM</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <codepage>1252</codepage>
+  </properties>
+  <controls>
+    <ajax_text>
+      <dimensions x="15" y="14" cx="54" cy="20"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1/>
+      <host_field>(ANY)</host_field>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_text>
+    <ajax_text>
+      <dimensions x="72" y="14" cx="58" cy="20"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1>
+        <right_aligned/>
+        <auto_tab/>
+        <cursor_selected/>
+        <output_when_read_only/>
+      </general_flags_1>
+      <host_field>(SAME)</host_field>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <general_flags_3/>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_text>
+  </controls>
+</panel>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="6.1859.1.29" modelVersion="1.0" ?>
+<ScreenTemplate>
+   <ScreenTemplateComment>Exclude fields by name</ScreenTemplateComment>
+   <HostFieldTable>
+      <HostField>
+         <FieldId>MENUFU2</FieldId>
+         <OrdinalNumber>1</OrdinalNumber>
+         <HostPosition>
+            <x>1</x>
+            <y>22</y>
+         </HostPosition>
+         <HostSize>
+            <cx>75</cx>
+            <cy>1</cy>
+         </HostSize>
+         <HostFieldType>Text</HostFieldType>
+         <Flags>
+            <StripBegin/>
+            <StripEnd/>
+            <StripPunctuation/>
+            <LeftAdjust/>
+         </Flags>
+         <FillerCharacter>32</FillerCharacter>
+      </HostField>
+      <HostField>
+         <FieldId>MENUFUN</FieldId>
+         <OrdinalNumber>2</OrdinalNumber>
+         <HostPosition>
+            <x>1</x>
+            <y>21</y>
+         </HostPosition>
+         <HostSize>
+            <cx>75</cx>
+            <cy>1</cy>
+         </HostSize>
+         <HostFieldType>Text</HostFieldType>
+         <Flags>
+            <StripBegin/>
+            <StripEnd/>
+            <StripPunctuation/>
+            <LeftAdjust/>
+         </Flags>
+         <FillerCharacter>32</FillerCharacter>
+      </HostField>
+      <HostField>
+         <FieldId>SYSNAME</FieldId>
+         <FieldOisObjectName/>
+         <HostFieldType>Marked</HostFieldType>
+         <OrdinalNumber>2147483647</OrdinalNumber>
+         <Flags>
+            <FieldExitRequired/>
+            <MetaAdjust/>
+         </Flags>
+         <RtlReadingOrder>FollowMeta</RtlReadingOrder>
+         <HostPosition>
+            <x>33</x>
+            <y>3</y>
+         </HostPosition>
+         <HostSize>
+            <cx>2</cx>
+            <cy>1</cy>
+         </HostSize>
+      </HostField>
+   </HostFieldTable>
+</ScreenTemplate>

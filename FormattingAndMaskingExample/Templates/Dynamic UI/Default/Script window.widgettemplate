@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2278.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties/>
+  <controls>
+    <ajax_script_window>
+      <dimensions x="10" y="10" cx="90" cy="16"/>
+      <id>SCRIPTWINDOW</id>
+      <script>//
+// To use the host api uncomment the following lines:
+//
+//var api = this;
+//var hostapi = &quot;hostApi&quot; in api ? api.hostApi : null;
+
+// To retrieve field id of this script window uncomment the following line: 
+//
+//var field_id = api.rs.getCurrentFieldId();
+
+// To retrieve the DOM element of this script window uncomment the following line:
+//
+//var element = api.target
+
+// To access other widgets on the page uncomment the following line:
+//
+// var widget = ajaxclient.webui.AjaxJavascript.getWidgetById("FIELDID");
+
+</script>
+    </ajax_script_window>
+  </controls>
+</panel>

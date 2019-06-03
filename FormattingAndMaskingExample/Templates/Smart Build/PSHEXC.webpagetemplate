@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
+  <properties>
+    <title>Push buttons to be excluded</title>
+    <id>PSHEXC</id>
+    <dimensions x="0" y="0" cx="588" cy="336"/>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+  </properties>
+  <controls>
+    <ajax_button>
+      <dimensions x="13" y="20" cx="81" cy="24"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <send_key>27</send_key>
+      <general_flags_2>
+        <state_dependent/>
+      </general_flags_2>
+      <title>More keys</title>
+    </ajax_button>
+    <ajax_button>
+      <dimensions x="15" y="50" cx="81" cy="24"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <send_key>2</send_key>
+      <general_flags_2>
+        <state_dependent/>
+      </general_flags_2>
+      <title>(ANY)</title>
+    </ajax_button>
+    <ajax_button>
+      <dimensions x="15" y="78" cx="81" cy="24"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <send_key>3</send_key>
+      <general_flags_2>
+        <state_dependent/>
+      </general_flags_2>
+      <title>(ANY)</title>
+    </ajax_button>
+  </controls>
+</panel>

@@ -1,0 +1,44 @@
+<rule>
+  <matches>
+  	<match>
+      <container id="combobox" template="Combo box">
+      	<field id="input" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>true</editable>
+            <width>1</width>
+          </attributes>
+        </field>
+        <container id="combovalues" min_occurrence="1" max_occurrence="1" search_direction="horizontal" skip_empty="true">
+			<field id="title" search_direction="vertical" min_occurrence="2">
+		  		<attributes>
+		    		<editable>false</editable>
+		  		</attributes>
+		  		<content>
+		    		<regexp pattern="(?&lt;key&gt;\d)\s*\&lt;?\&gt;?=\s*(?&lt;label&gt;[^(0-9(\f\n\r\t\v)*\&lt;?\&gt;?=]+)"/>
+		  		</content>
+			</field>
+		</container>
+      </container>
+    </match>
+    <match>
+      <container id="combobox">
+        <container id="combovalues" min_occurrence="1" max_occurrence="1" search_direction="horizontal" skip_empty="true">
+			<field id="title" search_direction="vertical" min_occurrence="2">
+		  		<attributes>
+		    		<editable>false</editable>
+		  		</attributes>
+		  		<content>
+		    		<regexp pattern="(?&lt;key&gt;\d)\s*\&lt;?\&gt;?=\s*(?&lt;label&gt;[^(0-9(\f\n\r\t\v)*\&lt;?\&gt;?=]+)"/>
+		  		</content>
+			</field>
+		</container>
+        <field id="input" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>true</editable>
+            <width>1</width>
+          </attributes>
+        </field>
+      </container>
+    </match>
+  </matches>
+</rule>

@@ -1,0 +1,14 @@
+<rule>
+  <matches>
+    <match>
+      <container id="textarea" template="Text area">
+        <field id="input" min_occurrence="1" max_occurrence="1">
+          <attributes>
+            <editable>true</editable>
+            <multiline>true</multiline>
+          </attributes>
+        </field>
+      </container>
+    </match>
+  </matches>
+</rule>

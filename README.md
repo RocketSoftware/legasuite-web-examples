@@ -1,12 +1,12 @@
 # legasuite-web-examples
-##About
+## About
 This reporitory contains examples for LegaSuite Web by Rocket Software. LegaSuite Web is an application suite for application modernization.
 
-##License
+## License
 The projects of this repository may be used under the terms of the MIT License.
 For more information please see [LICENSE](LICENSE).
 
-##Projects
+## Projects
 The following example projects are included in this repository:
 
 - **FormattingAndMaskingExample**

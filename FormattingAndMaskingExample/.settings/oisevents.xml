@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" modelVersion="1.0" ?>
+<OisEvents>
+   <OisEvent40Compliant>true</OisEvent40Compliant>
+   <OisEventSchema>Default</OisEventSchema>
+</OisEvents>

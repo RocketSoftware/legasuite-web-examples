@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" modelVersion="1.0" ?>
+<PublishSettings>
+   <ProjectDefaults>
+      <Licenses>9999</Licenses>
+      <PackageFileCompression>true</PackageFileCompression>
+   </ProjectDefaults>
+</PublishSettings>

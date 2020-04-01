@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Texts to translate before processing</title>
-    <id>XLATE</id>
     <dimensions x="0" y="0" cx="588" cy="336"/>
+    <id>XLATE</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
-      <no_zorder/>
       <no_panel_host/>
+      <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <title>Texts to translate before processing</title>
   </properties>
   <controls>
     <ajax_label>
-      <general_flags_2>
-        <visibility_equal_hide/>
-      </general_flags_2>
-      <title> A &lt;= $30.00 per Day</title>
+      <ajax_opts_common>
+        <ajax_enable_text_expression/>
+      </ajax_opts_common>
       <dimensions x="21" y="18" cx="147" cy="16"/>
+      <general_flags_2>
+        <visibility_equal_hide/>
+      </general_flags_2>
       <id>TEXT1</id>
+      <title> A &lt;= $30.00 per Day</title>
+    </ajax_label>
+    <ajax_label>
       <ajax_opts_common>
         <ajax_enable_text_expression/>
       </ajax_opts_common>
-    </ajax_label>
-    <ajax_label>
-      <general_flags_2>
-        <visibility_equal_hide/>
-      </general_flags_2>
-      <title>A = 30.00 dollar per Day or less</title>
       <dimensions x="264" y="18" cx="228" cy="16"/>
+      <general_flags_2>
+        <visibility_equal_hide/>
+      </general_flags_2>
       <id>TEXT2</id>
+      <title>A = 30.00 dollar per Day or less</title>
+    </ajax_label>
+    <ajax_label>
       <ajax_opts_common>
         <ajax_enable_text_expression/>
       </ajax_opts_common>
-    </ajax_label>
-    <ajax_label>
-      <general_flags_2>
-        <visibility_equal_hide/>
-      </general_flags_2>
-      <title> B =  $30.00 - $50.00 per Day</title>
       <dimensions x="24" y="48" cx="208" cy="16"/>
+      <general_flags_2>
+        <visibility_equal_hide/>
+      </general_flags_2>
       <id>TEXT3</id>
+      <title> B =  $30.00 - $50.00 per Day</title>
+    </ajax_label>
+    <ajax_label>
       <ajax_opts_common>
         <ajax_enable_text_expression/>
       </ajax_opts_common>
-    </ajax_label>
-    <ajax_label>
-      <general_flags_2>
-        <visibility_equal_hide/>
-      </general_flags_2>
-      <title>B = 30.00 - 50.00 dollar per Day</title>
       <dimensions x="264" y="48" cx="192" cy="16"/>
+      <general_flags_2>
+        <visibility_equal_hide/>
+      </general_flags_2>
       <id>TEXT4</id>
+      <title>B = 30.00 - 50.00 dollar per Day</title>
+    </ajax_label>
+    <ajax_label>
       <ajax_opts_common>
         <ajax_enable_text_expression/>
       </ajax_opts_common>
-    </ajax_label>
-    <ajax_label>
-      <general_flags_2>
-        <visibility_equal_hide/>
-      </general_flags_2>
-      <title> C =&gt; $50.00 per Day</title>
       <dimensions x="24" y="74" cx="147" cy="16"/>
-      <id>TEXT5</id>
-      <ajax_opts_common>
-        <ajax_enable_text_expression/>
-      </ajax_opts_common>
-    </ajax_label>
-    <ajax_label>
       <general_flags_2>
         <visibility_equal_hide/>
       </general_flags_2>
-      <title>C = 50.00 dollar per Day or more</title>
-      <dimensions x="264" y="74" cx="223" cy="16"/>
-      <id>TEXT6</id>
+      <id>TEXT5</id>
+      <title> C =&gt; $50.00 per Day</title>
+    </ajax_label>
+    <ajax_label>
       <ajax_opts_common>
         <ajax_enable_text_expression/>
       </ajax_opts_common>
+      <dimensions x="264" y="74" cx="223" cy="16"/>
+      <general_flags_2>
+        <visibility_equal_hide/>
+      </general_flags_2>
+      <id>TEXT6</id>
+      <title>C = 50.00 dollar per Day or more</title>
     </ajax_label>
   </controls>
 </panel>

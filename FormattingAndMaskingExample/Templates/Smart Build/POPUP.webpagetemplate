@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3763.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>@(TITLE)@</title>
-    <id>POPUP</id>
+    <codepage>1252</codepage>
     <dimensions x="0" y="0" cx="370" cy="248"/>
-    <panel_type>1</panel_type>
-    <panel_flags>
-      <update_on_host_change/>
-      <no_zorder/>
-      <dialog_frame/>
-      <no_titlebar/>
-      <no_systemmenu/>
-    </panel_flags>
     <general_flags_1>
       <always_update/>
     </general_flags_1>
-    <codepage>1252</codepage>
+    <id>POPUP</id>
+    <panel_flags>
+      <dialog_frame/>
+      <no_systemmenu/>
+      <no_titlebar/>
+      <no_zorder/>
+      <update_on_host_change/>
+    </panel_flags>
+    <panel_type>1</panel_type>
+    <title>@(TITLE)@</title>
   </properties>
   <menu_bar/>
   <messages>
@@ -29,39 +29,39 @@
   </messages>
   <controls>
     <ajax_button>
-      <title>Submit</title>
-      <dimensions x="77" y="183" cx="126" cy="28"/>
       <ajax_center>1</ajax_center>
-      <general_flags_1/>
-      <general_flags_3/>
+      <dimensions x="77" y="183" cx="126" cy="28"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <send_key>1</send_key>
+      <general_flags_1/>
       <general_flags_2>
         <default/>
       </general_flags_2>
+      <general_flags_3/>
       <id>SUBMIT</id>
+      <send_key>1</send_key>
+      <title>Submit</title>
     </ajax_button>
     <ajax_button>
-      <title>@FKEYS/1@</title>
-      <dimensions x="207" y="183" cx="126" cy="28"/>
       <ajax_center>1</ajax_center>
-      <general_flags_1/>
-      <general_flags_3/>
-      <field_flags>
-        <tab_stop/>
-      </field_flags>
-      <send_key>65535</send_key>
-      <general_flags_2>
-        <visibility_equal_hide/>
-      </general_flags_2>
-      <id>FKEY01</id>
-      <string_send>@FKEYS/-1@</string_send>
-      <enable_expression>@FKEYS/1@</enable_expression>
       <ajax_opts_common>
         <ajax_enable_text_expression/>
       </ajax_opts_common>
+      <dimensions x="207" y="183" cx="126" cy="28"/>
+      <enable_expression>@FKEYS/1@</enable_expression>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1/>
+      <general_flags_2>
+        <visibility_equal_hide/>
+      </general_flags_2>
+      <general_flags_3/>
+      <id>FKEY01</id>
+      <send_key>65535</send_key>
+      <string_send>@FKEYS/-1@</string_send>
+      <title>@FKEYS/1@</title>
     </ajax_button>
   </controls>
 </panel>

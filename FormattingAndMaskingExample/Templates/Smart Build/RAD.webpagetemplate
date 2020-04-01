@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Radio button layouts</title>
-    <id>RAD</id>
     <dimensions x="0" y="0" cx="920" cy="631"/>
+    <id>RAD</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
-      <no_zorder/>
       <no_panel_host/>
+      <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <title>Radio button layouts</title>
   </properties>
   <controls>
     <ajax_radio>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
       <dimensions x="15" y="20" cx="66" cy="20"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <host_field>(ANY)</host_field>
-      <value_selected>(ANY)</value_selected>
-      <title>(ANY)</title>
       <general_flags_2>
         <visibility_not_present_hide/>
         <visibility_output_data_disable/>
       </general_flags_2>
-      <ajax_opts_common>
-        <ajax_enable_host_condition/>
-      </ajax_opts_common>
+      <host_field>(ANY)</host_field>
+      <title>(ANY)</title>
+      <value_selected>(ANY)</value_selected>
     </ajax_radio>
     <ajax_radio>
       <dimensions x="88" y="20" cx="76" cy="20"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <title>(SAME)</title>
       <general_flags_1/>
       <general_flags_3/>
       <host_field>(SAME)</host_field>
-      <value_selected>(SAME)</value_selected>
       <id>(SAME)</id>
       <ois_object>(SAME)</ois_object>
+      <title>(SAME)</title>
+      <value_selected>(SAME)</value_selected>
     </ajax_radio>
   </controls>
 </panel>

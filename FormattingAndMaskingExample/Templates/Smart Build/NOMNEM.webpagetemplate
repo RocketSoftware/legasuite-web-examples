@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Texts which do not require a mnemonic</title>
-    <id>TXTNONE</id>
     <dimensions x="0" y="0" cx="920" cy="631"/>
+    <id>TXTNONE</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
       <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <title>Texts which do not require a mnemonic</title>
   </properties>
   <controls/>
 </panel>

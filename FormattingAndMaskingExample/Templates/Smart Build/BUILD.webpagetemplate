@@ -1,87 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <panel_flags>
-      <update_on_host_change/>
-      <no_zorder/>
-    </panel_flags>
-    <id>BUILD</id>
+    <ajax_layout_sort>2</ajax_layout_sort>
+    <ajax_layout_type>2</ajax_layout_type>
+    <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="1024" cy="768"/>
     <general_flags_1>
       <always_update/>
     </general_flags_1>
-    <title>@(TITLE)@</title>
-    <codepage>1252</codepage>
-    <dimensions x="0" y="0" cx="1024" cy="768"/>
     <general_flags_3/>
+    <id>BUILD</id>
     <notes>The BUILD tempate controls how all main screens in the application will look.</notes>
-    <ajax_layout_type>2</ajax_layout_type>
-    <ajax_layout_sort>2</ajax_layout_sort>
+    <panel_flags>
+      <no_zorder/>
+      <update_on_host_change/>
+    </panel_flags>
+    <title>@(TITLE)@</title>
   </properties>
   <messages>
     <message>
       <host_field>(MESSAGE)</host_field>
       <message_flags>
-        <update/>
         <clear_after_send_key/>
+        <update/>
       </message_flags>
     </message>
   </messages>
   <controls>
     <ajax_container>
-      <dimensions x="423" y="43" cx="240" cy="180"/>
-      <id>CONTAINER_NORTH</id>
+      <ajax_layout_aligny>1</ajax_layout_aligny>
       <ajax_layout_height>10</ajax_layout_height>
+      <ajax_layout_spacingx>0</ajax_layout_spacingx>
+      <ajax_layout_type>6</ajax_layout_type>
       <controls>
         <ajax_container>
-          <dimensions x="481" y="27" cx="112" cy="180"/>
-          <id>CONTAINER1</id>
+          <ajax_align_x>2</ajax_align_x>
+          <ajax_align_y>2</ajax_align_y>
+          <ajax_layout_alignx>1</ajax_layout_alignx>
+          <ajax_layout_aligny>1</ajax_layout_aligny>
+          <ajax_layout_type>0</ajax_layout_type>
+          <ajax_layout_width>15</ajax_layout_width>
+          <ajax_min_width>150</ajax_min_width>
+          <ajax_opts_layout>
+            <ajax_layout_min_width_not_empty/>
+          </ajax_opts_layout>
           <controls>
             <ajax_image>
+              <ajax_align_x>2</ajax_align_x>
+              <ajax_align_y>2</ajax_align_y>
+              <ajax_opacity>100</ajax_opacity>
               <dimensions x="20" y="12" cx="109" cy="45"/>
               <field_flags>
                 <tab_stop/>
               </field_flags>
-              <ajax_opacity>100</ajax_opacity>
-              <image_file>Resources/rocket_logo.jpg</image_file>
               <id>IMAGE1</id>
-              <ajax_align_y>2</ajax_align_y>
-              <ajax_align_x>2</ajax_align_x>
+              <image_file>Resources/rocket_logo.jpg</image_file>
               <script>urlOpen(&quot;www.rocketsoftware.com&quot;)</script>
             </ajax_image>
           </controls>
-          <ajax_layout_type>0</ajax_layout_type>
-          <ajax_align_x>2</ajax_align_x>
-          <ajax_align_y>2</ajax_align_y>
-          <ajax_layout_width>15</ajax_layout_width>
-          <ajax_layout_alignx>1</ajax_layout_alignx>
-          <ajax_layout_aligny>1</ajax_layout_aligny>
+          <dimensions x="481" y="27" cx="112" cy="180"/>
+          <id>CONTAINER1</id>
           <scrollbars_type>1</scrollbars_type>
-          <ajax_opts_layout>
-            <ajax_layout_min_width_not_empty/>
-          </ajax_opts_layout>
-          <ajax_min_width>150</ajax_min_width>
         </ajax_container>
         <ajax_container>
-          <dimensions x="541" y="19" cx="350" cy="180"/>
-          <id>CONTAINER2</id>
+          <ajax_layout_alignx>2</ajax_layout_alignx>
+          <ajax_layout_aligny>1</ajax_layout_aligny>
+          <ajax_layout_flex>1</ajax_layout_flex>
+          <ajax_layout_spacingx>5</ajax_layout_spacingx>
+          <ajax_layout_type>6</ajax_layout_type>
+          <ajax_opts_layout/>
           <controls>
             <ajax_button>
+              <ajax_align_y>2</ajax_align_y>
+              <ajax_center>1</ajax_center>
+              <ajax_decorator_name/>
+              <ajax_max_height>30</ajax_max_height>
+              <ajax_opacity>100</ajax_opacity>
+              <ajax_opts_layout>
+                <ajax_layout_max_height_not_empty/>
+              </ajax_opts_layout>
+              <ajax_show>1</ajax_show>
               <dimensions x="29" y="13" cx="90" cy="35"/>
               <field_flags>
                 <tab_stop/>
               </field_flags>
-              <ajax_opacity>100</ajax_opacity>
+              <help_text>send an e-mail</help_text>
               <id>BUTTON3</id>
-              <title>e-mail</title>
-              <ajax_decorator_name/>
-              <ajax_show>1</ajax_show>
-              <ajax_opts_layout>
-                <ajax_layout_max_height_not_empty/>
-              </ajax_opts_layout>
-              <ajax_max_height>30</ajax_max_height>
-              <ajax_align_y>2</ajax_align_y>
-              <ajax_center>1</ajax_center>
               <script>REM MailTo Script
 
 Dim Mailto as string
@@ -100,489 +105,484 @@ Body=&quot;Thank you for your interest in LegaSuite WebUI, the users love it.&qu
 mailto = &quot;mailto:&quot; + address + &quot;&amp;subject=&quot; + subject + &quot;&amp;body=&quot; + body + &quot;&amp;cc=&quot; + cc + &quot;&amp;bcc=&quot; + bcc
 
 urlopen (mailto)</script>
-              <help_text>send an e-mail</help_text>
+              <title>e-mail</title>
             </ajax_button>
             <ajax_button>
+              <ajax_align_x>3</ajax_align_x>
+              <ajax_align_y>2</ajax_align_y>
+              <ajax_center>1</ajax_center>
+              <ajax_decorator_name/>
+              <ajax_max_height>30</ajax_max_height>
+              <ajax_opacity>100</ajax_opacity>
+              <ajax_opts_layout>
+                <ajax_layout_max_height_not_empty/>
+              </ajax_opts_layout>
+              <ajax_show>1</ajax_show>
               <dimensions x="129" y="13" cx="90" cy="35"/>
               <field_flags>
                 <tab_stop/>
               </field_flags>
-              <ajax_opacity>100</ajax_opacity>
+              <help_text>logout</help_text>
               <id>BUTTON5</id>
               <title>logout</title>
-              <ajax_decorator_name/>
-              <ajax_show>1</ajax_show>
+            </ajax_button>
+            <ajax_button>
+              <ajax_align_y>2</ajax_align_y>
+              <ajax_center>1</ajax_center>
+              <ajax_max_height>30</ajax_max_height>
+              <ajax_opacity>100</ajax_opacity>
               <ajax_opts_layout>
                 <ajax_layout_max_height_not_empty/>
               </ajax_opts_layout>
-              <ajax_max_height>30</ajax_max_height>
-              <ajax_align_y>2</ajax_align_y>
-              <ajax_align_x>3</ajax_align_x>
-              <ajax_center>1</ajax_center>
-              <help_text>logout</help_text>
-            </ajax_button>
-            <ajax_button>
+              <ajax_show>1</ajax_show>
               <dimensions x="229" y="13" cx="90" cy="35"/>
               <field_flags>
                 <tab_stop/>
               </field_flags>
-              <ajax_opacity>100</ajax_opacity>
-              <id>BUTTON4</id>
-              <title>help</title>
-              <ajax_show>1</ajax_show>
-              <ajax_opts_layout>
-                <ajax_layout_max_height_not_empty/>
-              </ajax_opts_layout>
-              <ajax_max_height>30</ajax_max_height>
-              <ajax_align_y>2</ajax_align_y>
-              <ajax_center>1</ajax_center>
-              <script>urlOpen(&quot;www.rocketsoftware.com&quot;)</script>
               <help_text>help</help_text>
+              <id>BUTTON4</id>
+              <script>urlOpen(&quot;www.rocketsoftware.com&quot;)</script>
+              <title>help</title>
             </ajax_button>
             <ajax_text>
+              <ajax_opacity>100</ajax_opacity>
               <dimensions x="756" y="39" cx="120" cy="22"/>
               <field_flags>
                 <tab_stop/>
               </field_flags>
               <field_length length="0" field_type="0" check_direct="0"/>
-              <ajax_opacity>100</ajax_opacity>
-              <id>TEXT1</id>
               <help_text>enter search term</help_text>
+              <id>TEXT1</id>
             </ajax_text>
             <ajax_button>
+              <ajax_align_y>2</ajax_align_y>
+              <ajax_center>1</ajax_center>
+              <ajax_max_height>30</ajax_max_height>
+              <ajax_opacity>100</ajax_opacity>
+              <ajax_opts_layout>
+                <ajax_layout_max_height_not_empty/>
+              </ajax_opts_layout>
+              <ajax_show>2</ajax_show>
               <dimensions x="832" y="50" cx="35" cy="20"/>
               <field_flags>
                 <tab_stop/>
               </field_flags>
-              <ajax_opacity>100</ajax_opacity>
+              <help_text>search</help_text>
               <id>BUTTON6</id>
               <image_file>Resources\lookup.gif</image_file>
-              <help_text>search</help_text>
-              <ajax_show>2</ajax_show>
-              <ajax_center>1</ajax_center>
-              <ajax_align_y>2</ajax_align_y>
-              <ajax_opts_layout>
-                <ajax_layout_max_height_not_empty/>
-              </ajax_opts_layout>
-              <ajax_max_height>30</ajax_max_height>
             </ajax_button>
           </controls>
-          <ajax_layout_flex>1</ajax_layout_flex>
-          <ajax_layout_type>6</ajax_layout_type>
-          <ajax_opts_layout/>
-          <ajax_layout_spacingx>5</ajax_layout_spacingx>
-          <ajax_layout_alignx>2</ajax_layout_alignx>
-          <ajax_layout_aligny>1</ajax_layout_aligny>
+          <dimensions x="541" y="19" cx="350" cy="180"/>
+          <id>CONTAINER2</id>
         </ajax_container>
       </controls>
-      <ajax_layout_type>6</ajax_layout_type>
-      <ajax_layout_spacingx>0</ajax_layout_spacingx>
-      <ajax_layout_aligny>1</ajax_layout_aligny>
+      <dimensions x="423" y="43" cx="240" cy="180"/>
+      <id>CONTAINER_NORTH</id>
       <scrollbars_type>1</scrollbars_type>
     </ajax_container>
     <ajax_container>
-      <dimensions x="296" y="415" cx="240" cy="180"/>
-      <id>CONTAINER_WEST</id>
       <ajax_layout_edge>3</ajax_layout_edge>
       <ajax_layout_width>15</ajax_layout_width>
-      <controls>
-        <ajax_button>
-          <title>  @FKEYS/1@</title>
-          <string_send>@FKEYS/-1@</string_send>
-          <dimensions x="3" y="40" cx="144" cy="23"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <id>FKEY01</id>
-          <enable_expression>@FKEYS/1@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/12@</title>
-          <string_send>@FKEYS/-12@</string_send>
-          <dimensions x="3" y="447" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/12@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY12</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/2@</title>
-          <string_send>@FKEYS/-2@</string_send>
-          <dimensions x="3" y="77" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/2@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY02</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/3@</title>
-          <string_send>@FKEYS/-3@</string_send>
-          <dimensions x="3" y="114" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/3@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY03</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/4@</title>
-          <string_send>@FKEYS/-4@</string_send>
-          <dimensions x="3" y="151" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/4@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY04</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/5@</title>
-          <string_send>@FKEYS/-5@</string_send>
-          <dimensions x="3" y="188" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/5@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY05</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/6@</title>
-          <string_send>@FKEYS/-6@</string_send>
-          <dimensions x="3" y="225" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/6@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY06</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/7@</title>
-          <string_send>@FKEYS/-7@</string_send>
-          <dimensions x="3" y="262" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/7@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY07</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/8@</title>
-          <string_send>@FKEYS/-8@</string_send>
-          <dimensions x="3" y="299" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/8@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY08</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/9@</title>
-          <string_send>@FKEYS/-9@</string_send>
-          <dimensions x="3" y="336" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/9@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY09</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/10@</title>
-          <string_send>@FKEYS/-10@</string_send>
-          <dimensions x="3" y="373" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/10@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY10</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-        <ajax_button>
-          <title>  @FKEYS/11@</title>
-          <string_send>@FKEYS/-11@</string_send>
-          <dimensions x="3" y="410" cx="144" cy="28"/>
-          <general_flags_1>
-            <always_update/>
-            <no_border/>
-            <autolength/>
-          </general_flags_1>
-          <general_flags_3>
-            <mouse_over_hand/>
-          </general_flags_3>
-          <send_key>65535</send_key>
-          <field_flags>
-            <in_subwindow/>
-            <tab_stop/>
-          </field_flags>
-          <enable_expression>@FKEYS/11@</enable_expression>
-          <general_flags_2>
-            <visibility_equal_hide/>
-          </general_flags_2>
-          <general_flags_4/>
-          <id>FKEY11</id>
-          <ajax_show>1</ajax_show>
-          <ajax_opts_common>
-            <ajax_enable_text_expression/>
-          </ajax_opts_common>
-        </ajax_button>
-      </controls>
+      <ajax_min_width>150</ajax_min_width>
       <ajax_opts_layout>
         <ajax_layout_min_width_not_empty/>
       </ajax_opts_layout>
-      <ajax_min_width>150</ajax_min_width>
-    </ajax_container>
-    <ajax_container>
-      <dimensions x="660" y="359" cx="240" cy="180"/>
-      <id>CONTAINER_SOUTH</id>
-      <ajax_layout_edge>2</ajax_layout_edge>
       <controls>
         <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="40" cx="144" cy="23"/>
+          <enable_expression>@FKEYS/1@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY01</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-1@</string_send>
+          <title>  @FKEYS/1@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="447" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/12@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY12</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-12@</string_send>
+          <title>  @FKEYS/12@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="77" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/2@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY02</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-2@</string_send>
+          <title>  @FKEYS/2@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="114" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/3@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY03</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-3@</string_send>
+          <title>  @FKEYS/3@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="151" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/4@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY04</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-4@</string_send>
+          <title>  @FKEYS/4@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="188" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/5@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY05</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-5@</string_send>
+          <title>  @FKEYS/5@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="225" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/6@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY06</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-6@</string_send>
+          <title>  @FKEYS/6@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="262" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/7@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY07</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-7@</string_send>
+          <title>  @FKEYS/7@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="299" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/8@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY08</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-8@</string_send>
+          <title>  @FKEYS/8@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="336" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/9@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY09</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-9@</string_send>
+          <title>  @FKEYS/9@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="373" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/10@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY10</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-10@</string_send>
+          <title>  @FKEYS/10@</title>
+        </ajax_button>
+        <ajax_button>
+          <ajax_opts_common>
+            <ajax_enable_text_expression/>
+          </ajax_opts_common>
+          <ajax_show>1</ajax_show>
+          <dimensions x="3" y="410" cx="144" cy="28"/>
+          <enable_expression>@FKEYS/11@</enable_expression>
+          <field_flags>
+            <in_subwindow/>
+            <tab_stop/>
+          </field_flags>
+          <general_flags_1>
+            <always_update/>
+            <autolength/>
+            <no_border/>
+          </general_flags_1>
+          <general_flags_2>
+            <visibility_equal_hide/>
+          </general_flags_2>
+          <general_flags_3>
+            <mouse_over_hand/>
+          </general_flags_3>
+          <general_flags_4/>
+          <id>FKEY11</id>
+          <send_key>65535</send_key>
+          <string_send>@FKEYS/-11@</string_send>
+          <title>  @FKEYS/11@</title>
+        </ajax_button>
+      </controls>
+      <dimensions x="296" y="415" cx="240" cy="180"/>
+      <id>CONTAINER_WEST</id>
+    </ajax_container>
+    <ajax_container>
+      <ajax_layout_alignx>2</ajax_layout_alignx>
+      <ajax_layout_aligny>1</ajax_layout_aligny>
+      <ajax_layout_edge>2</ajax_layout_edge>
+      <ajax_layout_height>10</ajax_layout_height>
+      <ajax_layout_spacingx>5</ajax_layout_spacingx>
+      <ajax_layout_type>6</ajax_layout_type>
+      <controls>
+        <ajax_button>
+          <ajax_align_y>2</ajax_align_y>
+          <ajax_center>1</ajax_center>
+          <ajax_max_height>30</ajax_max_height>
+          <ajax_opacity>100</ajax_opacity>
+          <ajax_opts_layout>
+            <ajax_layout_max_height_not_empty/>
+          </ajax_opts_layout>
+          <ajax_show>1</ajax_show>
           <dimensions x="766" y="32" cx="90" cy="24"/>
           <field_flags>
             <tab_stop/>
           </field_flags>
-          <ajax_opacity>100</ajax_opacity>
-          <id>BUTTON1</id>
-          <ajax_show>1</ajax_show>
-          <title>Submit</title>
-          <ajax_align_y>2</ajax_align_y>
-          <ajax_opts_layout>
-            <ajax_layout_max_height_not_empty/>
-          </ajax_opts_layout>
-          <ajax_max_height>30</ajax_max_height>
           <general_flags_2>
             <default/>
           </general_flags_2>
+          <id>BUTTON1</id>
           <send_key>1</send_key>
-          <ajax_center>1</ajax_center>
+          <title>Submit</title>
         </ajax_button>
         <ajax_button>
+          <ajax_align_y>2</ajax_align_y>
+          <ajax_center>1</ajax_center>
+          <ajax_max_height>30</ajax_max_height>
+          <ajax_opacity>100</ajax_opacity>
+          <ajax_opts_layout>
+            <ajax_layout_max_height_not_empty/>
+          </ajax_opts_layout>
           <dimensions x="745" y="31" cx="90" cy="24"/>
           <field_flags>
             <tab_stop/>
           </field_flags>
-          <ajax_opacity>100</ajax_opacity>
           <id>BUTTON2</id>
-          <title>Cancel</title>
-          <ajax_align_y>2</ajax_align_y>
-          <ajax_opts_layout>
-            <ajax_layout_max_height_not_empty/>
-          </ajax_opts_layout>
-          <ajax_max_height>30</ajax_max_height>
           <send_key>15</send_key>
-          <ajax_center>1</ajax_center>
+          <title>Cancel</title>
         </ajax_button>
       </controls>
-      <ajax_layout_height>10</ajax_layout_height>
-      <ajax_layout_type>6</ajax_layout_type>
-      <ajax_layout_alignx>2</ajax_layout_alignx>
-      <ajax_layout_aligny>1</ajax_layout_aligny>
-      <ajax_layout_spacingx>5</ajax_layout_spacingx>
+      <dimensions x="660" y="359" cx="240" cy="180"/>
+      <id>CONTAINER_SOUTH</id>
       <scrollbars_type>1</scrollbars_type>
     </ajax_container>
     <ajax_container>
+      <ajax_layout_edge>4</ajax_layout_edge>
+      <ajax_layout_type>0</ajax_layout_type>
+      <controls/>
       <dimensions x="783" y="407" cx="240" cy="180"/>
       <id>CONTENTS</id>
-      <ajax_layout_edge>4</ajax_layout_edge>
-      <controls/>
-      <ajax_layout_type>0</ajax_layout_type>
     </ajax_container>
   </controls>
 </panel>

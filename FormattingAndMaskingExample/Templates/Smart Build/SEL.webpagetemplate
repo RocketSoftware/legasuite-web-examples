@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Selection list layout</title>
-    <id>SEL</id>
-    <dimensions x="0" y="0" cx="920" cy="631"/>
-    <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
-      <no_zorder/>
-    </panel_flags>
     <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <id>SEL</id>
+    <panel_flags>
+      <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
+    </panel_flags>
+    <title>Selection list layout</title>
   </properties>
   <controls>
     <ajax_grid>
-      <dimensions x="14" y="17" cx="206" cy="216"/>
-      <ajax_grid_column>
-        <general_flags_1/>
-        <host_field>(ANY)</host_field>
-        <title>(ANY)</title>
-        <column_width_chars>100</column_width_chars>
-        <list_column_flags/>
-      </ajax_grid_column>
-      <ajax_grid_column>
-        <general_flags_1>
-          <cursor_selected/>
-        </general_flags_1>
-        <list_column_flags>
-          <editable/>
-        </list_column_flags>
-        <host_field>(ANY)</host_field>
-        <title>(ANY)</title>
-        <column_width_chars>100</column_width_chars>
-      </ajax_grid_column>
-      <field_flags>
-        <tab_stop/>
-      </field_flags>
-      <general_flags_1/>
-      <list_box_flags/>
-      <general_flags_2>
-        <host_cursor_move/>
-      </general_flags_2>
-      <key_page_up>2</key_page_up>
-      <key_page_down>3</key_page_down>
-      <id>(LIST)</id>
-      <ajax_opts_common>
-        <ajax_enable_control_resizing/>
-        <ajax_draggable/>
-      </ajax_opts_common>
       <ajax_grid_flags>
         <ajax_enable_alternate_row_colors/>
         <ajax_enable_hideshow_columns/>
         <ajax_not_keep_first_visible_row_complete/>
       </ajax_grid_flags>
+      <ajax_opts_common>
+        <ajax_draggable/>
+        <ajax_enable_control_resizing/>
+      </ajax_opts_common>
+      <dimensions x="14" y="17" cx="206" cy="216"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1/>
+      <general_flags_2>
+        <host_cursor_move/>
+      </general_flags_2>
+      <id>(LIST)</id>
+      <key_page_down>3</key_page_down>
+      <key_page_up>2</key_page_up>
+      <list_box_flags/>
+      <ajax_grid_column>
+        <column_width_chars>100</column_width_chars>
+        <general_flags_1/>
+        <host_field>(ANY)</host_field>
+        <list_column_flags/>
+        <title>(ANY)</title>
+      </ajax_grid_column>
+      <ajax_grid_column>
+        <column_width_chars>100</column_width_chars>
+        <general_flags_1>
+          <cursor_selected/>
+        </general_flags_1>
+        <host_field>(ANY)</host_field>
+        <list_column_flags>
+          <editable/>
+        </list_column_flags>
+        <title>(ANY)</title>
+      </ajax_grid_column>
     </ajax_grid>
     <ajax_button>
-      <title>(BUTTON1)</title>
-      <dimensions x="14" y="241" cx="126" cy="30"/>
       <ajax_center>1</ajax_center>
-      <general_flags_1/>
-      <general_flags_3/>
+      <dimensions x="14" y="241" cx="126" cy="30"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <send_key>1</send_key>
+      <general_flags_1/>
       <general_flags_2>
         <state_dependent/>
       </general_flags_2>
+      <general_flags_3/>
       <id>(BUTTON1)</id>
       <list_name>(LIST)</list_name>
+      <send_key>1</send_key>
+      <title>(BUTTON1)</title>
     </ajax_button>
     <ajax_button>
-      <title>(BUTTON2)</title>
-      <dimensions x="145" y="241" cx="126" cy="30"/>
       <ajax_center>1</ajax_center>
-      <general_flags_1/>
-      <general_flags_3/>
+      <dimensions x="145" y="241" cx="126" cy="30"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <send_key>1</send_key>
+      <general_flags_1/>
       <general_flags_2>
         <state_dependent/>
       </general_flags_2>
-      <list_name>(LIST)</list_name>
+      <general_flags_3/>
       <id>(BUTTON2)</id>
+      <list_name>(LIST)</list_name>
+      <send_key>1</send_key>
+      <title>(BUTTON2)</title>
     </ajax_button>
   </controls>
 </panel>

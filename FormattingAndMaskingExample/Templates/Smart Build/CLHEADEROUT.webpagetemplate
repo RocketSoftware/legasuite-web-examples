@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Container List Header Output fields</title>
-    <id>OUT</id>
     <dimensions x="0" y="0" cx="920" cy="631"/>
-    <screen_name>OUT</screen_name>
+    <id>OUT</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
       <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <screen_name>OUT</screen_name>
+    <title>Container List Header Output fields</title>
   </properties>
   <controls>
     <ajax_label>
-      <dimensions x="15" y="26" cx="54" cy="16"/>
-      <title>@(ANY)@</title>
-      <general_flags_2>
-        <visibility_not_present_hide/>
-      </general_flags_2>
-      <general_flags_1/>
       <ajax_opts_common>
         <ajax_enable_host_condition/>
       </ajax_opts_common>
+      <dimensions x="15" y="26" cx="54" cy="16"/>
+      <general_flags_1/>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <title>@(ANY)@</title>
     </ajax_label>
     <ajax_label>
-      <dimensions x="71" y="26" cx="58" cy="16"/>
-      <title>@(SAME)@</title>
-      <general_flags_2>
-        <visibility_not_present_hide/>
-      </general_flags_2>
-      <general_flags_1/>
       <ajax_opts_common>
         <ajax_enable_host_condition/>
       </ajax_opts_common>
+      <dimensions x="71" y="26" cx="58" cy="16"/>
+      <general_flags_1/>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <title>@(SAME)@</title>
     </ajax_label>
   </controls>
 </panel>

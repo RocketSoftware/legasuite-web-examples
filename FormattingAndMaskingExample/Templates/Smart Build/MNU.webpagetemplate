@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Menu button layouts</title>
-    <id>MNU</id>
     <dimensions x="0" y="0" cx="920" cy="631"/>
-    <screen_name>MNU</screen_name>
+    <id>MNU</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
       <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <screen_name>MNU</screen_name>
+    <title>Menu button layouts</title>
   </properties>
   <controls>
     <ajax_button>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
       <dimensions x="12" y="16" cx="54" cy="24"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <id>(ANY)</id>
-      <ois_object>(ANY)</ois_object>
-      <host_field>(ANY)</host_field>
-      <panel_next>(ANY)</panel_next>
-      <list_name>(ANY)</list_name>
-      <string_send>(ANY)</string_send>
       <general_flags_2>
         <state_dependent/>
         <visibility_output_data_disable/>
       </general_flags_2>
+      <host_field>(ANY)</host_field>
+      <id>(ANY)</id>
+      <list_name>(ANY)</list_name>
+      <ois_object>(ANY)</ois_object>
+      <panel_next>(ANY)</panel_next>
+      <string_send>(ANY)</string_send>
       <title>(ANY)</title>
-      <ajax_opts_common>
-        <ajax_enable_host_condition/>
-      </ajax_opts_common>
     </ajax_button>
     <ajax_button>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+        <ajax_enable_text_expression/>
+      </ajax_opts_common>
       <dimensions x="75" y="16" cx="91" cy="22"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <send_key>1</send_key>
+      <general_flags_1/>
       <general_flags_2>
         <state_dependent/>
-        <visibility_output_data_disable/>
         <visibility_equal_hide/>
+        <visibility_output_data_disable/>
       </general_flags_2>
-      <title>(SAME)</title>
-      <general_flags_1/>
       <general_flags_3/>
-      <id>(SAME)</id>
-      <string_send>(SAME)</string_send>
+      <general_flags_4/>
       <host_field>(SAME)</host_field>
-      <panel_next>(SAME)</panel_next>
+      <id>(SAME)</id>
       <list_name>(SAME)</list_name>
       <ois_object>(SAME)</ois_object>
-      <general_flags_4/>
-      <ajax_opts_common>
-        <ajax_enable_text_expression/>
-        <ajax_enable_host_condition/>
-      </ajax_opts_common>
+      <panel_next>(SAME)</panel_next>
+      <send_key>1</send_key>
+      <string_send>(SAME)</string_send>
+      <title>(SAME)</title>
     </ajax_button>
   </controls>
 </panel>

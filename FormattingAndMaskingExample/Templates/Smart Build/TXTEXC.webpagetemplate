@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Texts to be excluded</title>
-    <id>TXTEXC</id>
     <dimensions x="0" y="0" cx="588" cy="336"/>
+    <id>TXTEXC</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
       <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <title>Texts to be excluded</title>
   </properties>
   <controls>
     <ajax_label>
       <dimensions x="15" y="40" cx="219" cy="16"/>
       <general_flags_1/>
-      <title>Select one of the following(ANY)</title>
       <id>TEXT1</id>
+      <title>Select one of the following(ANY)</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="15" y="60" cx="159" cy="16"/>
       <general_flags_1/>
-      <title>Press (ANY) to continue</title>
       <id>TEXT2</id>
+      <title>Press (ANY) to continue</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="15" y="80" cx="174" cy="16"/>
       <general_flags_1/>
-      <title>Type choices, press (ANY)</title>
       <id>TEXT3</id>
+      <title>Type choices, press (ANY)</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="15" y="100" cx="144" cy="16"/>
       <general_flags_1/>
-      <title>Selection or command</title>
       <id>TEXT4</id>
+      <title>Selection or command</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="15" y="120" cx="49" cy="16"/>
       <general_flags_1/>
-      <title>Bottom</title>
       <id>TEXT5</id>
+      <title>Bottom</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="15" y="140" cx="34" cy="16"/>
       <general_flags_1/>
-      <title>More</title>
       <id>TEXT6</id>
+      <title>More</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="15" y="160" cx="246" cy="16"/>
       <general_flags_1/>
-      <title>Type options below, then press(ANY)</title>
       <id>TEXT7</id>
+      <title>Type options below, then press(ANY)</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="18" y="180" cx="63" cy="16"/>
       <general_flags_1/>
-      <title>Selection</title>
       <id>TEXT8</id>
+      <title>Selection</title>
     </ajax_label>
     <ajax_label>
       <dimensions x="18" y="198" cx="52" cy="16"/>
       <general_flags_1/>
-      <title>Options</title>
       <id>TEXT9</id>
+      <title>Options</title>
     </ajax_label>
   </controls>
 </panel>

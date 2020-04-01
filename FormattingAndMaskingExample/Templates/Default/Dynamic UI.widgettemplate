@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0" modelVersion="1.0" ?>
-<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties/>
   <controls>
     <ajax_dynamic_ui>
+      <ajax_layout_type>8</ajax_layout_type>
       <dimensions x="10" y="10" cx="639" cy="337"/>
-      <widget_template_set>Default</widget_template_set>
       <value_list>
         <string>Password</string>
         <string>Text and Label</string>
       </value_list>
-      <ajax_layout_type>8</ajax_layout_type>
+      <widget_template_set>Default</widget_template_set>
     </ajax_dynamic_ui>
   </controls>
 </panel>

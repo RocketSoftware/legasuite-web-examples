@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Push buttons which should not be moved to the menu bar</title>
-    <id>PSHKEY</id>
     <dimensions x="0" y="0" cx="588" cy="336"/>
+    <id>PSHKEY</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
       <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <title>Push buttons which should not be moved to the menu bar</title>
   </properties>
   <controls>
     <ajax_button>
@@ -18,10 +18,10 @@
         <tab_stop/>
       </field_flags>
       <general_flags_1/>
-      <send_key>6</send_key>
       <general_flags_2>
         <state_dependent/>
       </general_flags_2>
+      <send_key>6</send_key>
       <title>(ANY)</title>
     </ajax_button>
     <ajax_button>
@@ -30,10 +30,10 @@
         <tab_stop/>
       </field_flags>
       <general_flags_1/>
-      <send_key>7</send_key>
       <general_flags_2>
         <state_dependent/>
       </general_flags_2>
+      <send_key>7</send_key>
       <title>(ANY)</title>
     </ajax_button>
     <ajax_button>
@@ -42,10 +42,10 @@
         <tab_stop/>
       </field_flags>
       <general_flags_1/>
-      <send_key>15</send_key>
       <general_flags_2>
         <state_dependent/>
       </general_flags_2>
+      <send_key>15</send_key>
       <title>(ANY)</title>
     </ajax_button>
   </controls>

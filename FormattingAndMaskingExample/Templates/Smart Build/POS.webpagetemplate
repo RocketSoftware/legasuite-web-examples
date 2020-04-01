@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Screen position to panel position mapping</title>
-    <id>POSMAIN</id>
-    <dimensions x="0" y="0" cx="920" cy="631"/>
-    <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
-      <no_zorder/>
-    </panel_flags>
     <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <id>POSMAIN</id>
+    <panel_flags>
+      <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
+    </panel_flags>
+    <title>Screen position to panel position mapping</title>
   </properties>
   <controls>
     <ajax_label>
+      <ajax_opts_common>
+        <ajax_enable_text_expression/>
+      </ajax_opts_common>
+      <dimensions x="195" y="90" cx="39" cy="18"/>
+      <general_flags_1/>
       <general_flags_2>
         <visibility_equal_hide/>
       </general_flags_2>
       <title>1,1</title>
-      <general_flags_1/>
-      <dimensions x="195" y="90" cx="39" cy="18"/>
-      <ajax_opts_common>
-        <ajax_enable_text_expression/>
-      </ajax_opts_common>
     </ajax_label>
   </controls>
 </panel>

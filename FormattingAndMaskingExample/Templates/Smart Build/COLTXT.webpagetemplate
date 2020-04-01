@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Listbox text column layouts</title>
-    <id>COLTXT</id>
-    <dimensions x="0" y="0" cx="920" cy="631"/>
-    <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
-      <no_zorder/>
-    </panel_flags>
     <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <id>COLTXT</id>
+    <panel_flags>
+      <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
+    </panel_flags>
+    <title>Listbox text column layouts</title>
   </properties>
   <controls>
     <ajax_grid>
-      <dimensions x="10" y="16" cx="88" cy="96"/>
-      <ajax_grid_column>
-        <general_flags_1/>
-        <host_field>(ANY)</host_field>
-        <title>(ANY)</title>
-        <column_width_chars>45</column_width_chars>
-      </ajax_grid_column>
-      <field_flags>
-        <tab_stop/>
-      </field_flags>
-      <general_flags_1/>
-      <list_box_flags/>
-      <id>(LIST)</id>
-      <general_flags_2/>
-      <ajax_opts_common>
-        <ajax_enable_control_resizing/>
-        <ajax_draggable/>
-      </ajax_opts_common>
       <ajax_grid_flags>
         <ajax_enable_hideshow_columns/>
       </ajax_grid_flags>
-    </ajax_grid>
-    <ajax_grid>
-      <dimensions x="10" y="116" cx="107" cy="216"/>
-      <ajax_grid_column>
-        <general_flags_1>
-          <cursor_selected/>
-        </general_flags_1>
-        <host_field>(SAME)</host_field>
-        <title>(SAME)</title>
-        <column_width_chars>73</column_width_chars>
-        <list_column_flags/>
-      </ajax_grid_column>
+      <ajax_opts_common>
+        <ajax_draggable/>
+        <ajax_enable_control_resizing/>
+      </ajax_opts_common>
+      <dimensions x="10" y="16" cx="88" cy="96"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <general_flags_2/>
-      <list_box_flags/>
-      <key_page_up>2</key_page_up>
-      <key_page_down>3</key_page_down>
       <general_flags_1/>
+      <general_flags_2/>
       <id>(LIST)</id>
-      <ajax_opts_common>
-        <ajax_enable_control_resizing/>
-        <ajax_draggable/>
-      </ajax_opts_common>
+      <list_box_flags/>
+      <ajax_grid_column>
+        <column_width_chars>45</column_width_chars>
+        <general_flags_1/>
+        <host_field>(ANY)</host_field>
+        <title>(ANY)</title>
+      </ajax_grid_column>
+    </ajax_grid>
+    <ajax_grid>
       <ajax_grid_flags>
         <ajax_enable_alternate_row_colors/>
         <ajax_enable_hideshow_columns/>
         <ajax_not_keep_first_visible_row_complete/>
       </ajax_grid_flags>
+      <ajax_opts_common>
+        <ajax_draggable/>
+        <ajax_enable_control_resizing/>
+      </ajax_opts_common>
+      <dimensions x="10" y="116" cx="107" cy="216"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1/>
+      <general_flags_2/>
+      <id>(LIST)</id>
+      <key_page_down>3</key_page_down>
+      <key_page_up>2</key_page_up>
+      <list_box_flags/>
+      <ajax_grid_column>
+        <column_width_chars>73</column_width_chars>
+        <general_flags_1>
+          <cursor_selected/>
+        </general_flags_1>
+        <host_field>(SAME)</host_field>
+        <list_column_flags/>
+        <title>(SAME)</title>
+      </ajax_grid_column>
     </ajax_grid>
   </controls>
 </panel>

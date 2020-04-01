@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties/>
   <controls>
     <ajax_button>
+      <ajax_center>1</ajax_center>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_show>2</ajax_show>
       <dimensions x="10" y="10" cx="90" cy="24"/>
       <field_flags>
         <tab_stop/>
       </field_flags>
-      <ajax_opacity>100</ajax_opacity>
       <id>BUTTON</id>
       <image_file>Resources\lookup.gif</image_file>
-      <ajax_show>2</ajax_show>
-      <ajax_center>1</ajax_center>
     </ajax_button>
     <ajax_label>
-      <dimensions x="111" y="12" cx="90" cy="31"/>
       <ajax_opacity>100</ajax_opacity>
+      <dimensions x="111" y="12" cx="90" cy="31"/>
       <id>LABEL</id>
     </ajax_label>
   </controls>

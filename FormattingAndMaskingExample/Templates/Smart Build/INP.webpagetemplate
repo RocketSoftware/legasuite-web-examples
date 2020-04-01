@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3666.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Include entry fields</title>
-    <id>INP</id>
     <dimensions x="0" y="0" cx="920" cy="631"/>
+    <id>INP</id>
     <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
       <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
     </panel_flags>
+    <title>Include entry fields</title>
   </properties>
   <controls>
     <ajax_text>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
       <dimensions x="15" y="14" cx="54" cy="20"/>
       <field_flags>
         <tab_stop/>
@@ -20,16 +23,16 @@
       <general_flags_1>
         <output_when_read_only/>
       </general_flags_1>
-      <host_field>(ANY)</host_field>
       <general_flags_2>
         <visibility_not_present_hide/>
         <visibility_output_data_disable/>
       </general_flags_2>
+      <host_field>(ANY)</host_field>
+    </ajax_text>
+    <ajax_text>
       <ajax_opts_common>
         <ajax_enable_host_condition/>
       </ajax_opts_common>
-    </ajax_text>
-    <ajax_text>
       <dimensions x="72" y="14" cx="54" cy="20"/>
       <field_flags>
         <tab_stop/>
@@ -39,15 +42,12 @@
         <cursor_selected/>
         <output_when_read_only/>
       </general_flags_1>
-      <host_field>(SAME)</host_field>
       <general_flags_2>
         <visibility_not_present_hide/>
         <visibility_output_data_disable/>
       </general_flags_2>
       <general_flags_3/>
-      <ajax_opts_common>
-        <ajax_enable_host_condition/>
-      </ajax_opts_common>
+      <host_field>(SAME)</host_field>
     </ajax_text>
   </controls>
 </panel>

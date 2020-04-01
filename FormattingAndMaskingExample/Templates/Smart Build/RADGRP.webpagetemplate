@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3624.0.0" modelVersion="1.0" ?>
+<?VersionInfo exeName="LegaSuite.exe" productName="lswb" exeVersion="8.3802.0.0" modelVersion="1.1" ?>
 <panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/webpagedefinition2_6.xsd">
   <properties>
-    <title>Radio button group layout</title>
-    <id>RADGRP</id>
-    <dimensions x="0" y="0" cx="920" cy="631"/>
-    <panel_flags>
-      <update_on_host_change/>
-      <size_independent/>
-      <no_zorder/>
-    </panel_flags>
     <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <id>RADGRP</id>
+    <panel_flags>
+      <no_zorder/>
+      <size_independent/>
+      <update_on_host_change/>
+    </panel_flags>
+    <title>Radio button group layout</title>
   </properties>
   <controls>
     <ajax_group_box>
-      <field_flags/>
-      <title>(ANY)</title>
-      <general_flags_1/>
-      <dimensions x="15" y="22" cx="148" cy="55"/>
       <controls>
         <ajax_radio>
+          <ajax_opts_common>
+            <ajax_enable_host_condition/>
+          </ajax_opts_common>
           <dimensions x="-1" y="-9" cx="57" cy="18"/>
           <field_flags>
             <tab_stop/>
           </field_flags>
-          <title>(ANY)</title>
+          <general_flags_1/>
           <general_flags_2>
             <visibility_not_present_hide/>
             <visibility_output_data_disable/>
           </general_flags_2>
-          <general_flags_1/>
           <general_flags_3/>
           <host_field>(ANY)</host_field>
+          <title>(ANY)</title>
           <value_selected>(ANY)</value_selected>
+        </ajax_radio>
+        <ajax_radio>
           <ajax_opts_common>
             <ajax_enable_host_condition/>
           </ajax_opts_common>
-        </ajax_radio>
-        <ajax_radio>
           <dimensions x="62" y="-9" cx="57" cy="18"/>
           <field_flags>
             <tab_stop/>
           </field_flags>
-          <title>(ANY)</title>
+          <general_flags_1/>
           <general_flags_2>
             <visibility_not_present_hide/>
             <visibility_output_data_disable/>
           </general_flags_2>
-          <general_flags_1/>
           <general_flags_3/>
           <host_field>(ANY)</host_field>
+          <title>(ANY)</title>
           <value_selected>(ANY)</value_selected>
-          <ajax_opts_common>
-            <ajax_enable_host_condition/>
-          </ajax_opts_common>
         </ajax_radio>
       </controls>
+      <dimensions x="15" y="22" cx="148" cy="55"/>
+      <field_flags/>
+      <general_flags_1/>
+      <title>(ANY)</title>
     </ajax_group_box>
   </controls>
 </panel>

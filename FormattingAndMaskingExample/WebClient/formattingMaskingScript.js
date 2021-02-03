@@ -60,7 +60,12 @@ function attachFormattingAndMaskingCode(widgetId, scriptWindow) {
                 newString;
 
             newString = formatValue(currentString);
-
+            // When pasting (without format), the length can exceed the maximum input length.
+            // when so, it is corrected here
+            if (widget.getMaxLength && widget.getMaxLength() > 0 && (newString.length > widget.getMaxLength())) {
+            	newString = newString.slice(0, widget.getMaxLength());
+            }
+            
             if(currentString !== newString) {
                 widget.setValue(newString);
                 //calculate new cursor position and set it if needed

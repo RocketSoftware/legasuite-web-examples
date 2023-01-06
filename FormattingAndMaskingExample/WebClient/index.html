@@ -109,6 +109,7 @@
                 var cacheId = "";
                 if(this.status === 200) {
                     cacheId += "?v=" + this.responseText;
+                    ajaxJS.setAttribute("ClientVersion", this.responseText);
                 }
                 ajaxJS.setAttribute("src", "script/ajaxclient.js" + cacheId);
                 head.appendChild(ajaxJS);

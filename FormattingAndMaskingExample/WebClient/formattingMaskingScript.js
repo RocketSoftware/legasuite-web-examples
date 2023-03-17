@@ -1,4 +1,4 @@
-//*******************************************************************************/
+﻿//*******************************************************************************/
 //*  Rocket Software makes no warranty, express or implied, with regard to      */
 //*  this material, including fitness for use. Additionally, Rocket is not      */
 //*  responsible for maintaining compatibility of this information with future  */
